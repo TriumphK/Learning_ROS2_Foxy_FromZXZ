@@ -1,0 +1,21 @@
+launch:
+- node:
+    pkg: "turtlesim"
+    exec: "turtlesim_node"
+    name: "t1"
+    namespace: "ns"
+    exec_name: "my_turtle"
+    respawn: "false"
+    param:
+    # -
+    #     name: "background_r"
+    #     value: 100
+    # -
+    #     name: "background_g"
+    #     value: 60
+    # -
+    #     name: "background_b"
+    #     value: 125
+    -
+        from: "$(find-pkg-share cpp08_launch)/config/gaga.yaml"
+    args: "--ros-args --remap __ns:=/xxx"

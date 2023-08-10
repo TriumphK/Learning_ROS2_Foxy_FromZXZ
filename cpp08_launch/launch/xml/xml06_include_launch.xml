@@ -1,0 +1,6 @@
+<launch>
+    <let name="bg_r" value="50" />
+    <let name="bg_g" value="50" />
+    <let name="bg_b" value="150" />
+    <include file="$(find-pkg-share cpp08_launch)/launch/xml/xml04_args_launch.xml" />
+</launch>

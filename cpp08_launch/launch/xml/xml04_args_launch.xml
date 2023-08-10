@@ -1,0 +1,11 @@
+<launch>
+    <arg name="bg_r" default="255" />
+    <arg name="bg_g" default="255" />
+    <arg name="bg_b" default="255" />
+
+    <node pkg="turtlesim" exec="turtlesim_node" name="t1">
+        <param name="background_r" value="$(var bg_r)" />
+        <param name="background_g" value="$(var bg_g)" />
+        <param name="background_b" value="$(var bg_b)" />
+    </node>
+</launch>

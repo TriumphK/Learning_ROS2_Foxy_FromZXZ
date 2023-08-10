@@ -1,0 +1,12 @@
+launch:
+- arg:
+    name: "bg_r"
+    default: "200"
+
+- node:
+    pkg: "turtlesim"
+    exec: "turtlesim_node"
+    param:
+    -
+        name: "background_r"
+        value: $(var bg_r)

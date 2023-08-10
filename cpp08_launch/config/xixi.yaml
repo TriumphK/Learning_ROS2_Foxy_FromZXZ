@@ -1,0 +1,6 @@
+/t1:
+  ros__parameters:
+    background_b: 10
+    background_g: 50
+    background_r: 60
+    use_sim_time: false
